@@ -1,0 +1,81 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+section h2::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: '';
+  background-image: url('./images/icons/check.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #3A3845;
+  border-radius: 50%;
+  left: -25px;
+}
+
+section h2 {
+  left: 30px;
+  position: relative;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transform: scaleY(1.1);
+  margin-top: 10px;
+}
+
+.cards-wrapper {
+  display: grid;
+  overflow-x: scroll;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cards-wrapper.dresses, .cards-wrapper.pajamas {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #3A3845;
+  border-radius: 10px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  margin: 0 20px;
+}
+
+.card-image {
+  max-width: 150px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.card-info .name {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transform: scaleY(1.2);
+  margin-bottom: 5px;
+}
+
+.card-info .description {
+  font-size: .7rem;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}

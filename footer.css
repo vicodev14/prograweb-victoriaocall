@@ -1,0 +1,37 @@
+.socials-footer {
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  padding: 20px;
+}
+
+.socials-footer h2 {
+  font-weight: 400;
+  border-bottom: 1px solid black;
+}
+
+.socials-footer .socials-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-container > div {
+  display: flex;
+  align-items: center;
+}
+
+.socials-container a {
+  margin-left: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.socials-footer i {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
